@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" href="imgs/logo.png" />
+
+    <!-- fontawsome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- my style  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- loader  -->
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <!-- Search Bars -->
+    <section id="search-bars" class="pb-0 container">
+        <div class="row py-4 ">
+            <div class="col-md-6 ">
+                <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+            </div>
+        </div>
+    </section>
+    <!-- Side Navbar -->
+    <nav class="vh-100 d-flex">
+      <div class="links p-4 d-flex flex-column justify-content-between">
+        <ul class="list-unstyled">
+          <li class="mb-4">
+            <a  class="links-item" href="#">Search</a>
+          </li>
+          <li class="mb-4">
+            <a
+              id="category"
+              class="links-item"
+              data-category="category"
+              href="#"
+              >Categories</a
+            >
+          </li>
+          <li class="mb-4">
+            <a id="area" class="links-item" data-area="area" href="#">Area</a>
+          </li>
+          <li class="mb-4">
+            <a id="Ingredients" class="links-item" data-ingredients="ingredients" href="#"
+              >Ingredients</a
+            >
+          </li>
+          <li class="mb-4">
+            <a id="contactUs" class="links-item" data-contact="contact" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div id="nav-footer">
+          <div class="d-flex">
+            <a href="https://github.com/ranariad" target="_blank"
+              ><div><i class="mx-1 fa-brands fa-github"></i></div
+            ></a>
+            <a href="https://www.linkedin.com/in/rana-riad/" target="_blank"
+              ><div><i class="mx-1 fa-brands fa-linkedin"></i></div
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><div><i class="mx-1 fa-brands fa-facebook"></i></div
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><div><i class="mx-1 fa-brands fa-instagram"></i></div
+            ></a>
+          </div>
+          <p>Copyright © 2023 by Rana Riad. <br />All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        id="drawer"
+        class="d-flex flex-column justify-content-between align-items-center"
+      >
+        <a href="index.html"
+          ><img class="img-fluid" src="imgs/logo.png" alt="LOGO"
+        /></a>
+        <div id="drawer-icon">
+          <i id="open-btn" class="fa fa-bars fs-3 mx-2 mb-1"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <a href="https://www.google.com/"><i class="fa fa-globe mb-3"></i></a>
+          <a href="https://www.themealdb.com/api.php"
+            ><i class="fa fa-share-nodes"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="container p-0 p-xl-5">
+        <div class="row meal-list g-4">
+          <!-- CODE HERE -->
+        </div>
+      </div>
+    </section>
+
+    <!-- jquary  -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- bootstarp js  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- my js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
